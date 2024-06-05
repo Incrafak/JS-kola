@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Generování trojúhelníku</h2>
+
+<p>Zadejte počet řádků:</p>
+
+<input type="number" id="rows" name="rows">
+<button onclick="generateTriangle()">Generovat</button>
+
+<p id="triangle"></p>
+
+<script>
+function generateTriangle() {
+    var n = document.getElementById("rows").value;
+    var triangle = "";
+    for(var i=0; i<n; i++) {
+        for(var j=0; j<=i; j++) {
+            triangle += j + " ";
+        }
+        triangle += "<br>";
+    }
+    document.getElementById("triangle").innerHTML = triangle;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesarova šifra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Caesarova šifra</h2>
+    <div class="input-container">
+      <label for="inputText">Text:</label>
+      <textarea id="inputText" placeholder="Zadejte text k zašifrování"></textarea>
+    </div>
+    <div class="input-container">
+      <label for="key">Klíč:</label>
+      <input type="number" id="key" placeholder="Zadejte klíč posunu" min="1">
+    </div>
+    <button onclick="encrypt()">Zašifrovat</button>
+    <div class="output-container">
+      <label for="outputText">Zašifrovaný text:</label>
+      <textarea id="outputText" readonly></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

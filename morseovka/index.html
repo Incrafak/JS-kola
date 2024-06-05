@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morseův kód</title>
+    <style>
+        #container {
+            display: flex;
+        }
+        #input-output-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+        #morse-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Morseovka</h1>
+    <h2>A-Z,0-9 používejte tečky a pomlčky</h2>
+</center>
+    <div id="container">
+        <div id="input-output-container">
+            <label for="input" style=”font-size:"5">Text:</label>
+            <textarea id="input" rows="4" cols="30"></textarea><br>
+            <button onclick="encode()">Zakódovat</button>
+            <button onclick="decode()">Dekódovat</button><br>
+            <label for="output">Výstup:</label>
+            <textarea id="output" rows="4" cols="30"></textarea>
+        </div>
+        <div>
+            <img src="morseovka.png" alt="Morseovka" id="morse-image">
+        </div>
+    </div>
+    <script src="morse.js"></script>
+</body>
+</html>

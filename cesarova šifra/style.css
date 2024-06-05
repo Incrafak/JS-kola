@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  background-color: #2314a3;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+textarea, input[type="number"], button {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+label {
+  font-weight: bold;
+}
+
+#outputText {
+  resize: vertical;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+}
